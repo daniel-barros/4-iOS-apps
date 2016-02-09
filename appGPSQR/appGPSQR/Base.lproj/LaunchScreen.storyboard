@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NPI Práctica 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJg-r1-xq2">
+                                <rect key="frame" x="115" y="220" width="144.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoji Sargent Harada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYy-fV-8vj">
+                                <rect key="frame" x="112" y="408" width="151" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daniel Barros López" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWi-Pl-Z6d">
+                                <rect key="frame" x="111" y="379" width="153" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PuntoGPSQR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD9-Jb-o58">
+                                <rect key="frame" x="128" y="255.5" width="119" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bJg-r1-xq2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="2Yw-cZ-pQu"/>
+                            <constraint firstItem="CYy-fV-8vj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8jy-kM-Gog"/>
+                            <constraint firstItem="GD9-Jb-o58" firstAttribute="centerX" secondItem="CYy-fV-8vj" secondAttribute="centerX" id="9yR-si-lul"/>
+                            <constraint firstItem="GD9-Jb-o58" firstAttribute="centerX" secondItem="kWi-Pl-Z6d" secondAttribute="centerX" id="D37-G0-wBB"/>
+                            <constraint firstItem="bJg-r1-xq2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DHN-Ed-AZi"/>
+                            <constraint firstItem="kWi-Pl-Z6d" firstAttribute="top" secondItem="GD9-Jb-o58" secondAttribute="bottom" constant="100" id="cHr-vb-ADn"/>
+                            <constraint firstItem="CYy-fV-8vj" firstAttribute="top" secondItem="kWi-Pl-Z6d" secondAttribute="bottom" constant="8" id="hWI-Lg-D9w"/>
+                            <constraint firstItem="GD9-Jb-o58" firstAttribute="top" secondItem="bJg-r1-xq2" secondAttribute="bottom" constant="8" symbolic="YES" id="ipK-YJ-RHa"/>
+                            <constraint firstItem="kWi-Pl-Z6d" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kjD-mE-a7e"/>
+                            <constraint firstItem="GD9-Jb-o58" firstAttribute="centerX" secondItem="bJg-r1-xq2" secondAttribute="centerX" id="mbb-4w-KuL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9yR-si-lul"/>
+                                <exclude reference="D37-G0-wBB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.5" y="538.5"/>
+        </scene>
+    </scenes>
+</document>

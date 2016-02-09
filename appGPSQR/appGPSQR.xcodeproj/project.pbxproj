@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330E076F1C68D03A00F5AD0F /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E07651C68D03A00F5AD0F /* QRCameraSwitchButton.m */; };
+		330E07701C68D03A00F5AD0F /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E07671C68D03A00F5AD0F /* QRCodeReader.m */; };
+		330E07711C68D03A00F5AD0F /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E076A1C68D03A00F5AD0F /* QRCodeReaderView.m */; };
+		330E07721C68D03A00F5AD0F /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E076C1C68D03A00F5AD0F /* QRCodeReaderViewController.m */; };
+		330E07731C68D03A00F5AD0F /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 330E076E1C68D03A00F5AD0F /* QRToggleTorchButton.m */; };
+		330E07761C68DF5A00F5AD0F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330E07751C68DF5A00F5AD0F /* MapKit.framework */; };
+		330E07781C6905CA00F5AD0F /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E07771C6905CA00F5AD0F /* GlobalFunctions.swift */; };
+		330E077A1C690E0800F5AD0F /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E07791C690E0800F5AD0F /* MapAnnotation.swift */; };
+		33414CC11C68C4730023B7F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33414CC01C68C4730023B7F3 /* AppDelegate.swift */; };
+		33414CC31C68C4730023B7F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33414CC21C68C4730023B7F3 /* ViewController.swift */; };
+		33414CC61C68C4730023B7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33414CC41C68C4730023B7F3 /* Main.storyboard */; };
+		33414CC81C68C4730023B7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33414CC71C68C4730023B7F3 /* Assets.xcassets */; };
+		33414CCB1C68C4730023B7F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33414CC91C68C4730023B7F3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		330E07631C68D03900F5AD0F /* appGPSQR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appGPSQR-Bridging-Header.h"; sourceTree = "<group>"; };
+		330E07641C68D03A00F5AD0F /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCameraSwitchButton.h; sourceTree = "<group>"; };
+		330E07651C68D03A00F5AD0F /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		330E07661C68D03A00F5AD0F /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
+		330E07671C68D03A00F5AD0F /* QRCodeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReader.m; sourceTree = "<group>"; };
+		330E07681C68D03A00F5AD0F /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderDelegate.h; sourceTree = "<group>"; };
+		330E07691C68D03A00F5AD0F /* QRCodeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderView.h; sourceTree = "<group>"; };
+		330E076A1C68D03A00F5AD0F /* QRCodeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderView.m; sourceTree = "<group>"; };
+		330E076B1C68D03A00F5AD0F /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		330E076C1C68D03A00F5AD0F /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderViewController.m; sourceTree = "<group>"; };
+		330E076D1C68D03A00F5AD0F /* QRToggleTorchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRToggleTorchButton.h; sourceTree = "<group>"; };
+		330E076E1C68D03A00F5AD0F /* QRToggleTorchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRToggleTorchButton.m; sourceTree = "<group>"; };
+		330E07751C68DF5A00F5AD0F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		330E07771C6905CA00F5AD0F /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		330E07791C690E0800F5AD0F /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		33414CBD1C68C4730023B7F3 /* appGPSQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appGPSQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33414CC01C68C4730023B7F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33414CC21C68C4730023B7F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33414CC51C68C4730023B7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33414CC71C68C4730023B7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33414CCA1C68C4730023B7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33414CCC1C68C4730023B7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33414CBA1C68C4730023B7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330E07761C68DF5A00F5AD0F /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330E07741C68D04000F5AD0F /* QRCodeReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				330E07641C68D03A00F5AD0F /* QRCameraSwitchButton.h */,
+				330E07651C68D03A00F5AD0F /* QRCameraSwitchButton.m */,
+				330E07661C68D03A00F5AD0F /* QRCodeReader.h */,
+				330E07671C68D03A00F5AD0F /* QRCodeReader.m */,
+				330E07681C68D03A00F5AD0F /* QRCodeReaderDelegate.h */,
+				330E07691C68D03A00F5AD0F /* QRCodeReaderView.h */,
+				330E076A1C68D03A00F5AD0F /* QRCodeReaderView.m */,
+				330E076B1C68D03A00F5AD0F /* QRCodeReaderViewController.h */,
+				330E076C1C68D03A00F5AD0F /* QRCodeReaderViewController.m */,
+				330E076D1C68D03A00F5AD0F /* QRToggleTorchButton.h */,
+				330E076E1C68D03A00F5AD0F /* QRToggleTorchButton.m */,
+			);
+			path = QRCodeReaderViewController;
+			sourceTree = "<group>";
+		};
+		33414CB41C68C4730023B7F3 = {
+			isa = PBXGroup;
+			children = (
+				330E07751C68DF5A00F5AD0F /* MapKit.framework */,
+				33414CBF1C68C4730023B7F3 /* appGPSQR */,
+				33414CBE1C68C4730023B7F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33414CBE1C68C4730023B7F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33414CBD1C68C4730023B7F3 /* appGPSQR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33414CBF1C68C4730023B7F3 /* appGPSQR */ = {
+			isa = PBXGroup;
+			children = (
+				33414CC01C68C4730023B7F3 /* AppDelegate.swift */,
+				33414CC21C68C4730023B7F3 /* ViewController.swift */,
+				330E07791C690E0800F5AD0F /* MapAnnotation.swift */,
+				33414CC41C68C4730023B7F3 /* Main.storyboard */,
+				330E07771C6905CA00F5AD0F /* GlobalFunctions.swift */,
+				33414CC71C68C4730023B7F3 /* Assets.xcassets */,
+				33414CC91C68C4730023B7F3 /* LaunchScreen.storyboard */,
+				33414CCC1C68C4730023B7F3 /* Info.plist */,
+				330E07631C68D03900F5AD0F /* appGPSQR-Bridging-Header.h */,
+				330E07741C68D04000F5AD0F /* QRCodeReaderViewController */,
+			);
+			path = appGPSQR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33414CBC1C68C4730023B7F3 /* appGPSQR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33414CCF1C68C4730023B7F3 /* Build configuration list for PBXNativeTarget "appGPSQR" */;
+			buildPhases = (
+				33414CB91C68C4730023B7F3 /* Sources */,
+				33414CBA1C68C4730023B7F3 /* Frameworks */,
+				33414CBB1C68C4730023B7F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appGPSQR;
+			productName = appGPSQR;
+			productReference = 33414CBD1C68C4730023B7F3 /* appGPSQR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33414CB51C68C4730023B7F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Daniel Barros & Yoji Sargent";
+				TargetAttributes = {
+					33414CBC1C68C4730023B7F3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 33414CB81C68C4730023B7F3 /* Build configuration list for PBXProject "appGPSQR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33414CB41C68C4730023B7F3;
+			productRefGroup = 33414CBE1C68C4730023B7F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33414CBC1C68C4730023B7F3 /* appGPSQR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33414CBB1C68C4730023B7F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33414CCB1C68C4730023B7F3 /* LaunchScreen.storyboard in Resources */,
+				33414CC81C68C4730023B7F3 /* Assets.xcassets in Resources */,
+				33414CC61C68C4730023B7F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33414CB91C68C4730023B7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33414CC31C68C4730023B7F3 /* ViewController.swift in Sources */,
+				330E07721C68D03A00F5AD0F /* QRCodeReaderViewController.m in Sources */,
+				330E077A1C690E0800F5AD0F /* MapAnnotation.swift in Sources */,
+				330E07781C6905CA00F5AD0F /* GlobalFunctions.swift in Sources */,
+				330E076F1C68D03A00F5AD0F /* QRCameraSwitchButton.m in Sources */,
+				330E07711C68D03A00F5AD0F /* QRCodeReaderView.m in Sources */,
+				330E07701C68D03A00F5AD0F /* QRCodeReader.m in Sources */,
+				330E07731C68D03A00F5AD0F /* QRToggleTorchButton.m in Sources */,
+				33414CC11C68C4730023B7F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33414CC41C68C4730023B7F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33414CC51C68C4730023B7F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33414CC91C68C4730023B7F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33414CCA1C68C4730023B7F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33414CCD1C68C4730023B7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33414CCE1C68C4730023B7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33414CD01C68C4730023B7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = appGPSQR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "daniel-barros.appGPSQR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "appGPSQR/appGPSQR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33414CD11C68C4730023B7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = appGPSQR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "daniel-barros.appGPSQR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "appGPSQR/appGPSQR-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33414CB81C68C4730023B7F3 /* Build configuration list for PBXProject "appGPSQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33414CCD1C68C4730023B7F3 /* Debug */,
+				33414CCE1C68C4730023B7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33414CCF1C68C4730023B7F3 /* Build configuration list for PBXNativeTarget "appGPSQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33414CD01C68C4730023B7F3 /* Debug */,
+				33414CD11C68C4730023B7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33414CB51C68C4730023B7F3 /* Project object */;
+}
