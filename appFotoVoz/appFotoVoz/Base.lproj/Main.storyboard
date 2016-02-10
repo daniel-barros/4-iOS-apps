@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appFotoVoz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yqe-Np-GzU">
+                                <rect key="frame" x="175" y="20" width="25" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tp7-zi-lLP"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Norte 10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzB-xS-1Ll">
+                                <rect key="frame" x="26" y="170" width="323" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ke-A8-vTQ">
+                                <rect key="frame" x="119" y="351" width="137" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Dar orientación"/>
+                                <connections>
+                                    <action selector="getOrientation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4VR-95-IKY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yqe-Np-GzU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4wE-jb-pa4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8ke-A8-vTQ" secondAttribute="bottom" constant="280" id="96A-Gk-QAQ"/>
+                            <constraint firstItem="SzB-xS-1Ll" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="HlC-To-o7R"/>
+                            <constraint firstItem="SzB-xS-1Ll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QkK-W7-7HY"/>
+                            <constraint firstItem="8ke-A8-vTQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VL9-iH-oJ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SzB-xS-1Ll" secondAttribute="trailing" constant="10" id="kvA-5I-l9C"/>
+                            <constraint firstItem="SzB-xS-1Ll" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="uw4-cU-a4F"/>
+                            <constraint firstItem="yqe-Np-GzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xh0-5A-xSb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="button" destination="8ke-A8-vTQ" id="4iS-bc-ibe"/>
+                        <outlet property="label" destination="SzB-xS-1Ll" id="klz-aa-f3s"/>
+                        <outlet property="textField" destination="yqe-Np-GzU" id="Vgy-3u-trF"/>
+                        <segue destination="mMT-2a-95k" kind="show" identifier="showCompassSegue" id="7eP-3b-kUY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Compass View Controller-->
+        <scene sceneID="EPw-jr-iYM">
+            <objects>
+                <viewController id="mMT-2a-95k" customClass="CompassViewController" customModule="appFotoVoz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VQt-CU-VXG"/>
+                        <viewControllerLayoutGuide type="bottom" id="BVI-i9-Wil"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xts-Nk-pNA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="w3z-SH-jvd">
+                                <rect key="frame" x="5" y="200" width="365" height="365"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w3z-SH-jvd" secondAttribute="height" multiplier="1:1" id="RYR-8W-chY"/>
+                                    <constraint firstAttribute="width" constant="400" id="kEQ-VF-2os"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kEQ-VF-2os"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tC6-f9-L2k">
+                                <rect key="frame" x="177" y="100" width="20" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.15433702551952422" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IGB-HO-CfW"/>
+                                    <constraint firstAttribute="width" constant="20" id="lrq-XW-MpK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFq-n1-Qp4">
+                                <rect key="frame" x="16" y="24" width="181" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Cambiar orientación"/>
+                                <connections>
+                                    <segue destination="gdw-w3-YoU" kind="unwind" unwindAction="prepareForUnwind:" id="Wec-0z-cc0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orientación: Norte  Error: 9°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uN-4d-nAL">
+                                <rect key="frame" x="74" y="605" width="226" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8uN-4d-nAL" firstAttribute="top" secondItem="VQt-CU-VXG" secondAttribute="bottom" constant="50" id="4wW-oc-jP2"/>
+                            <constraint firstItem="kFq-n1-Qp4" firstAttribute="leading" secondItem="Xts-Nk-pNA" secondAttribute="leadingMargin" id="91v-vE-DWC"/>
+                            <constraint firstItem="BVI-i9-Wil" firstAttribute="top" secondItem="8uN-4d-nAL" secondAttribute="bottom" constant="559" id="IR8-vw-cwk"/>
+                            <constraint firstItem="8uN-4d-nAL" firstAttribute="centerX" secondItem="w3z-SH-jvd" secondAttribute="centerX" id="KS5-vA-khl"/>
+                            <constraint firstItem="w3z-SH-jvd" firstAttribute="top" secondItem="tC6-f9-L2k" secondAttribute="bottom" constant="40" id="KsM-x9-ve2"/>
+                            <constraint firstItem="tC6-f9-L2k" firstAttribute="centerX" secondItem="8uN-4d-nAL" secondAttribute="centerX" id="LXc-IH-omB"/>
+                            <constraint firstItem="8uN-4d-nAL" firstAttribute="top" secondItem="w3z-SH-jvd" secondAttribute="bottom" constant="40" id="Rum-6a-5IN"/>
+                            <constraint firstItem="tC6-f9-L2k" firstAttribute="top" secondItem="VQt-CU-VXG" secondAttribute="bottom" constant="80" id="VUe-kO-z5z"/>
+                            <constraint firstItem="8uN-4d-nAL" firstAttribute="bottom" secondItem="w3z-SH-jvd" secondAttribute="bottom" constant="-42" id="brG-zi-JeI"/>
+                            <constraint firstItem="w3z-SH-jvd" firstAttribute="leading" secondItem="Xts-Nk-pNA" secondAttribute="leadingMargin" constant="20" id="cfV-pf-uqv"/>
+                            <constraint firstItem="w3z-SH-jvd" firstAttribute="centerY" secondItem="Xts-Nk-pNA" secondAttribute="centerY" constant="40" id="eO0-TE-cf5"/>
+                            <constraint firstItem="w3z-SH-jvd" firstAttribute="centerX" secondItem="Xts-Nk-pNA" secondAttribute="centerX" id="fxG-Zh-O27"/>
+                            <constraint firstItem="BVI-i9-Wil" firstAttribute="top" secondItem="8uN-4d-nAL" secondAttribute="bottom" constant="40" id="gjs-Md-rIS"/>
+                            <constraint firstItem="kFq-n1-Qp4" firstAttribute="top" secondItem="VQt-CU-VXG" secondAttribute="bottom" constant="4" id="kwL-08-MDC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w3z-SH-jvd" secondAttribute="trailing" constant="20" id="nPI-Iv-tXn"/>
+                            <constraint firstItem="tC6-f9-L2k" firstAttribute="top" secondItem="8uN-4d-nAL" secondAttribute="bottom" constant="16" id="ohU-Ug-3ZT"/>
+                            <constraint firstItem="tC6-f9-L2k" firstAttribute="centerX" secondItem="Xts-Nk-pNA" secondAttribute="centerX" id="vL5-h4-3VQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cfV-pf-uqv"/>
+                                <exclude reference="eO0-TE-cf5"/>
+                                <exclude reference="nPI-Iv-tXn"/>
+                                <exclude reference="LXc-IH-omB"/>
+                                <exclude reference="ohU-Ug-3ZT"/>
+                                <exclude reference="4wW-oc-jP2"/>
+                                <exclude reference="brG-zi-JeI"/>
+                                <exclude reference="IR8-vw-cwk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="compassImageView" destination="w3z-SH-jvd" id="g6H-5m-2yu"/>
+                        <outlet property="label" destination="8uN-4d-nAL" id="Ayr-yx-548"/>
+                        <outlet property="needleView" destination="tC6-f9-L2k" id="mr1-6o-WUS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8H-7u-TcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gdw-w3-YoU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="290"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compass" width="600" height="600"/>
+    </resources>
+</document>

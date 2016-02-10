@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330C34C61C62824500208C35 /* ButterGesturePhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C34C51C62824500208C35 /* ButterGesturePhase.swift */; };
+		330C34C71C62824500208C35 /* ButterGesturePhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C34C51C62824500208C35 /* ButterGesturePhase.swift */; };
+		333351611C5BCCFF00DE300A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333351601C5BCCFF00DE300A /* AppDelegate.swift */; };
+		333351631C5BCCFF00DE300A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333351621C5BCCFF00DE300A /* ViewController.swift */; };
+		333351661C5BCCFF00DE300A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333351641C5BCCFF00DE300A /* Main.storyboard */; };
+		333351681C5BCCFF00DE300A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333351671C5BCCFF00DE300A /* Assets.xcassets */; };
+		3333516B1C5BCCFF00DE300A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333351691C5BCCFF00DE300A /* LaunchScreen.storyboard */; };
+		335047331C5BEB94006FB2DA /* buttonIn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 335047321C5BEB94006FB2DA /* buttonIn.mp3 */; };
+		3350473A1C5FE1B3006FB2DA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335047381C5FE1B3006FB2DA /* Interface.storyboard */; };
+		3350473C1C5FE1B3006FB2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3350473B1C5FE1B3006FB2DA /* Assets.xcassets */; };
+		335047431C5FE1B3006FB2DA /* appMovimientoSonido Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 335047421C5FE1B3006FB2DA /* appMovimientoSonido Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3350474A1C5FE1B3006FB2DA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335047491C5FE1B3006FB2DA /* InterfaceController.swift */; };
+		3350474C1C5FE1B3006FB2DA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350474B1C5FE1B3006FB2DA /* ExtensionDelegate.swift */; };
+		3350474E1C5FE1B3006FB2DA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350474D1C5FE1B3006FB2DA /* NotificationController.swift */; };
+		335047501C5FE1B3006FB2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3350474F1C5FE1B3006FB2DA /* Assets.xcassets */; };
+		335047541C5FE1B3006FB2DA /* appMovimientoSonido.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 335047361C5FE1B3006FB2DA /* appMovimientoSonido.app */; };
+		3350475E1C5FF016006FB2DA /* WatchMessageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350475D1C5FF016006FB2DA /* WatchMessageKeys.swift */; };
+		335047601C5FF1BD006FB2DA /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350475F1C5FF1BD006FB2DA /* GlobalFunctions.swift */; };
+		335047621C5FF60B006FB2DA /* WatchMessageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350475D1C5FF016006FB2DA /* WatchMessageKeys.swift */; };
+		33EED1E11C600C4B0093AE45 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350475F1C5FF1BD006FB2DA /* GlobalFunctions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		335047441C5FE1B3006FB2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 333351551C5BCCFF00DE300A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335047411C5FE1B3006FB2DA;
+			remoteInfo = "appMovimientoSonido Extension";
+		};
+		335047521C5FE1B3006FB2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 333351551C5BCCFF00DE300A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335047351C5FE1B3006FB2DA;
+			remoteInfo = appMovimientoSonido;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3350475A1C5FE1B3006FB2DA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				335047431C5FE1B3006FB2DA /* appMovimientoSonido Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3350475C1C5FE1B3006FB2DA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				335047541C5FE1B3006FB2DA /* appMovimientoSonido.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		330C34C51C62824500208C35 /* ButterGesturePhase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButterGesturePhase.swift; sourceTree = "<group>"; };
+		3333515D1C5BCCFF00DE300A /* appMovimientoSonido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appMovimientoSonido.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		333351601C5BCCFF00DE300A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		333351621C5BCCFF00DE300A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		333351651C5BCCFF00DE300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		333351671C5BCCFF00DE300A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3333516A1C5BCCFF00DE300A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3333516C1C5BCCFF00DE300A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335047321C5BEB94006FB2DA /* buttonIn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonIn.mp3; sourceTree = "<group>"; };
+		335047361C5FE1B3006FB2DA /* appMovimientoSonido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appMovimientoSonido.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		335047391C5FE1B3006FB2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3350473B1C5FE1B3006FB2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3350473D1C5FE1B3006FB2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335047421C5FE1B3006FB2DA /* appMovimientoSonido Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "appMovimientoSonido Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		335047481C5FE1B3006FB2DA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		335047491C5FE1B3006FB2DA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3350474B1C5FE1B3006FB2DA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3350474D1C5FE1B3006FB2DA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3350474F1C5FE1B3006FB2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		335047511C5FE1B3006FB2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3350475D1C5FF016006FB2DA /* WatchMessageKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchMessageKeys.swift; sourceTree = "<group>"; };
+		3350475F1C5FF1BD006FB2DA /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3333515A1C5BCCFF00DE300A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3350473F1C5FE1B3006FB2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		333351541C5BCCFF00DE300A = {
+			isa = PBXGroup;
+			children = (
+				3333515F1C5BCCFF00DE300A /* PuntoMovimientoSonido */,
+				335047371C5FE1B3006FB2DA /* appMovimientoSonido */,
+				335047461C5FE1B3006FB2DA /* appMovimientoSonido Extension */,
+				335047611C5FF5C2006FB2DA /* Common */,
+				3333515E1C5BCCFF00DE300A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3333515E1C5BCCFF00DE300A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3333515D1C5BCCFF00DE300A /* appMovimientoSonido.app */,
+				335047361C5FE1B3006FB2DA /* appMovimientoSonido.app */,
+				335047421C5FE1B3006FB2DA /* appMovimientoSonido Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3333515F1C5BCCFF00DE300A /* PuntoMovimientoSonido */ = {
+			isa = PBXGroup;
+			children = (
+				333351601C5BCCFF00DE300A /* AppDelegate.swift */,
+				333351621C5BCCFF00DE300A /* ViewController.swift */,
+				333351641C5BCCFF00DE300A /* Main.storyboard */,
+				333351671C5BCCFF00DE300A /* Assets.xcassets */,
+				333351691C5BCCFF00DE300A /* LaunchScreen.storyboard */,
+				3333516C1C5BCCFF00DE300A /* Info.plist */,
+				335047321C5BEB94006FB2DA /* buttonIn.mp3 */,
+			);
+			path = PuntoMovimientoSonido;
+			sourceTree = "<group>";
+		};
+		335047371C5FE1B3006FB2DA /* appMovimientoSonido */ = {
+			isa = PBXGroup;
+			children = (
+				335047381C5FE1B3006FB2DA /* Interface.storyboard */,
+				3350473B1C5FE1B3006FB2DA /* Assets.xcassets */,
+				3350473D1C5FE1B3006FB2DA /* Info.plist */,
+			);
+			path = appMovimientoSonido;
+			sourceTree = "<group>";
+		};
+		335047461C5FE1B3006FB2DA /* appMovimientoSonido Extension */ = {
+			isa = PBXGroup;
+			children = (
+				335047491C5FE1B3006FB2DA /* InterfaceController.swift */,
+				3350474B1C5FE1B3006FB2DA /* ExtensionDelegate.swift */,
+				3350474D1C5FE1B3006FB2DA /* NotificationController.swift */,
+				3350474F1C5FE1B3006FB2DA /* Assets.xcassets */,
+				335047511C5FE1B3006FB2DA /* Info.plist */,
+				335047471C5FE1B3006FB2DA /* Supporting Files */,
+			);
+			path = "appMovimientoSonido Extension";
+			sourceTree = "<group>";
+		};
+		335047471C5FE1B3006FB2DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				335047481C5FE1B3006FB2DA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		335047611C5FF5C2006FB2DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				330C34C51C62824500208C35 /* ButterGesturePhase.swift */,
+				3350475D1C5FF016006FB2DA /* WatchMessageKeys.swift */,
+				3350475F1C5FF1BD006FB2DA /* GlobalFunctions.swift */,
+			);
+			name = Common;
+			path = PuntoMovimientoSonido;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3333515C1C5BCCFF00DE300A /* PuntoMovimientoSonido */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3333516F1C5BCCFF00DE300A /* Build configuration list for PBXNativeTarget "PuntoMovimientoSonido" */;
+			buildPhases = (
+				333351591C5BCCFF00DE300A /* Sources */,
+				3333515A1C5BCCFF00DE300A /* Frameworks */,
+				3333515B1C5BCCFF00DE300A /* Resources */,
+				3350475C1C5FE1B3006FB2DA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				335047531C5FE1B3006FB2DA /* PBXTargetDependency */,
+			);
+			name = PuntoMovimientoSonido;
+			productName = PuntoMovimientoSonido;
+			productReference = 3333515D1C5BCCFF00DE300A /* appMovimientoSonido.app */;
+			productType = "com.apple.product-type.application";
+		};
+		335047351C5FE1B3006FB2DA /* appMovimientoSonido */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3350475B1C5FE1B3006FB2DA /* Build configuration list for PBXNativeTarget "appMovimientoSonido" */;
+			buildPhases = (
+				335047341C5FE1B3006FB2DA /* Resources */,
+				3350475A1C5FE1B3006FB2DA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				335047451C5FE1B3006FB2DA /* PBXTargetDependency */,
+			);
+			name = appMovimientoSonido;
+			productName = appMovimientoSonido;
+			productReference = 335047361C5FE1B3006FB2DA /* appMovimientoSonido.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		335047411C5FE1B3006FB2DA /* appMovimientoSonido Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335047591C5FE1B3006FB2DA /* Build configuration list for PBXNativeTarget "appMovimientoSonido Extension" */;
+			buildPhases = (
+				3350473E1C5FE1B3006FB2DA /* Sources */,
+				3350473F1C5FE1B3006FB2DA /* Frameworks */,
+				335047401C5FE1B3006FB2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "appMovimientoSonido Extension";
+			productName = "appMovimientoSonido Extension";
+			productReference = 335047421C5FE1B3006FB2DA /* appMovimientoSonido Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		333351551C5BCCFF00DE300A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Daniel y Yoji";
+				TargetAttributes = {
+					3333515C1C5BCCFF00DE300A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 96D5NXJ99X;
+					};
+					335047351C5FE1B3006FB2DA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 96D5NXJ99X;
+					};
+					335047411C5FE1B3006FB2DA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 96D5NXJ99X;
+					};
+				};
+			};
+			buildConfigurationList = 333351581C5BCCFF00DE300A /* Build configuration list for PBXProject "appMovimientoSonido" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 333351541C5BCCFF00DE300A;
+			productRefGroup = 3333515E1C5BCCFF00DE300A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3333515C1C5BCCFF00DE300A /* PuntoMovimientoSonido */,
+				335047351C5FE1B3006FB2DA /* appMovimientoSonido */,
+				335047411C5FE1B3006FB2DA /* appMovimientoSonido Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3333515B1C5BCCFF00DE300A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3333516B1C5BCCFF00DE300A /* LaunchScreen.storyboard in Resources */,
+				335047331C5BEB94006FB2DA /* buttonIn.mp3 in Resources */,
+				333351681C5BCCFF00DE300A /* Assets.xcassets in Resources */,
+				333351661C5BCCFF00DE300A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335047341C5FE1B3006FB2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3350473C1C5FE1B3006FB2DA /* Assets.xcassets in Resources */,
+				3350473A1C5FE1B3006FB2DA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335047401C5FE1B3006FB2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335047501C5FE1B3006FB2DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		333351591C5BCCFF00DE300A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3350475E1C5FF016006FB2DA /* WatchMessageKeys.swift in Sources */,
+				333351631C5BCCFF00DE300A /* ViewController.swift in Sources */,
+				335047601C5FF1BD006FB2DA /* GlobalFunctions.swift in Sources */,
+				330C34C61C62824500208C35 /* ButterGesturePhase.swift in Sources */,
+				333351611C5BCCFF00DE300A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3350473E1C5FE1B3006FB2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3350474E1C5FE1B3006FB2DA /* NotificationController.swift in Sources */,
+				3350474C1C5FE1B3006FB2DA /* ExtensionDelegate.swift in Sources */,
+				33EED1E11C600C4B0093AE45 /* GlobalFunctions.swift in Sources */,
+				330C34C71C62824500208C35 /* ButterGesturePhase.swift in Sources */,
+				335047621C5FF60B006FB2DA /* WatchMessageKeys.swift in Sources */,
+				3350474A1C5FE1B3006FB2DA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		335047451C5FE1B3006FB2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 335047411C5FE1B3006FB2DA /* appMovimientoSonido Extension */;
+			targetProxy = 335047441C5FE1B3006FB2DA /* PBXContainerItemProxy */;
+		};
+		335047531C5FE1B3006FB2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 335047351C5FE1B3006FB2DA /* appMovimientoSonido */;
+			targetProxy = 335047521C5FE1B3006FB2DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		333351641C5BCCFF00DE300A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				333351651C5BCCFF00DE300A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		333351691C5BCCFF00DE300A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3333516A1C5BCCFF00DE300A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		335047381C5FE1B3006FB2DA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				335047391C5FE1B3006FB2DA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3333516D1C5BCCFF00DE300A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3333516E1C5BCCFF00DE300A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		333351701C5BCCFF00DE300A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PuntoMovimientoSonido/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.PuntoMovimientoSonido;
+				PRODUCT_NAME = appMovimientoSonido;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		333351711C5BCCFF00DE300A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PuntoMovimientoSonido/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.PuntoMovimientoSonido;
+				PRODUCT_NAME = appMovimientoSonido;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		335047551C5FE1B3006FB2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = appMovimientoSonido_Extension;
+				INFOPLIST_FILE = appMovimientoSonido/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.PuntoMovimientoSonido.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		335047561C5FE1B3006FB2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = appMovimientoSonido_Extension;
+				INFOPLIST_FILE = appMovimientoSonido/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.PuntoMovimientoSonido.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		335047571C5FE1B3006FB2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "appMovimientoSonido Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.PuntoMovimientoSonido.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		335047581C5FE1B3006FB2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "appMovimientoSonido Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.PuntoMovimientoSonido.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		333351581C5BCCFF00DE300A /* Build configuration list for PBXProject "appMovimientoSonido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3333516D1C5BCCFF00DE300A /* Debug */,
+				3333516E1C5BCCFF00DE300A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3333516F1C5BCCFF00DE300A /* Build configuration list for PBXNativeTarget "PuntoMovimientoSonido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333351701C5BCCFF00DE300A /* Debug */,
+				333351711C5BCCFF00DE300A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		335047591C5FE1B3006FB2DA /* Build configuration list for PBXNativeTarget "appMovimientoSonido Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335047571C5FE1B3006FB2DA /* Debug */,
+				335047581C5FE1B3006FB2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3350475B1C5FE1B3006FB2DA /* Build configuration list for PBXNativeTarget "appMovimientoSonido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335047551C5FE1B3006FB2DA /* Debug */,
+				335047561C5FE1B3006FB2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 333351551C5BCCFF00DE300A /* Project object */;
+}

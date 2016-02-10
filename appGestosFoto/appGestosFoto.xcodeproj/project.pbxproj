@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330999BA1C4AD869005CBA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330999B91C4AD869005CBA66 /* AppDelegate.swift */; };
+		330999BC1C4AD869005CBA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330999BB1C4AD869005CBA66 /* ViewController.swift */; };
+		330999BF1C4AD869005CBA66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330999BD1C4AD869005CBA66 /* Main.storyboard */; };
+		330999C11C4AD869005CBA66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330999C01C4AD869005CBA66 /* Assets.xcassets */; };
+		330999CC1C4ADEA9005CBA66 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330999CB1C4ADEA9005CBA66 /* BoardView.swift */; };
+		330999CE1C4AF3E3005CBA66 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330999CD1C4AF3E3005CBA66 /* GlobalFunctions.swift */; };
+		330999D01C4B43DD005CBA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330999CF1C4B43DD005CBA66 /* LaunchScreen.storyboard */; };
+		330999D21C4B482C005CBA66 /* TimerCameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330999D11C4B482C005CBA66 /* TimerCameraOverlayView.swift */; };
+		331423FC1C5129D900DA13DB /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331423FB1C5129D900DA13DB /* PatternViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		330999B61C4AD869005CBA66 /* appGestosFoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appGestosFoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		330999B91C4AD869005CBA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		330999BB1C4AD869005CBA66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		330999BE1C4AD869005CBA66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		330999C01C4AD869005CBA66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		330999C51C4AD869005CBA66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		330999CB1C4ADEA9005CBA66 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		330999CD1C4AF3E3005CBA66 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		330999CF1C4B43DD005CBA66 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		330999D11C4B482C005CBA66 /* TimerCameraOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCameraOverlayView.swift; sourceTree = "<group>"; };
+		331423FB1C5129D900DA13DB /* PatternViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		330999B31C4AD869005CBA66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330999AD1C4AD869005CBA66 = {
+			isa = PBXGroup;
+			children = (
+				330999B81C4AD869005CBA66 /* appGestosFoto */,
+				330999B71C4AD869005CBA66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		330999B71C4AD869005CBA66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				330999B61C4AD869005CBA66 /* appGestosFoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		330999B81C4AD869005CBA66 /* appGestosFoto */ = {
+			isa = PBXGroup;
+			children = (
+				330999B91C4AD869005CBA66 /* AppDelegate.swift */,
+				330999BB1C4AD869005CBA66 /* ViewController.swift */,
+				331423FB1C5129D900DA13DB /* PatternViewController.swift */,
+				330999CB1C4ADEA9005CBA66 /* BoardView.swift */,
+				330999D11C4B482C005CBA66 /* TimerCameraOverlayView.swift */,
+				330999CD1C4AF3E3005CBA66 /* GlobalFunctions.swift */,
+				330999BD1C4AD869005CBA66 /* Main.storyboard */,
+				330999C01C4AD869005CBA66 /* Assets.xcassets */,
+				330999CF1C4B43DD005CBA66 /* LaunchScreen.storyboard */,
+				330999C51C4AD869005CBA66 /* Info.plist */,
+			);
+			path = appGestosFoto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		330999B51C4AD869005CBA66 /* appGestosFoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330999C81C4AD869005CBA66 /* Build configuration list for PBXNativeTarget "appGestosFoto" */;
+			buildPhases = (
+				330999B21C4AD869005CBA66 /* Sources */,
+				330999B31C4AD869005CBA66 /* Frameworks */,
+				330999B41C4AD869005CBA66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appGestosFoto;
+			productName = appGestosFoto;
+			productReference = 330999B61C4AD869005CBA66 /* appGestosFoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		330999AE1C4AD869005CBA66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Daniel Barros López";
+				TargetAttributes = {
+					330999B51C4AD869005CBA66 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 96D5NXJ99X;
+					};
+				};
+			};
+			buildConfigurationList = 330999B11C4AD869005CBA66 /* Build configuration list for PBXProject "appGestosFoto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 330999AD1C4AD869005CBA66;
+			productRefGroup = 330999B71C4AD869005CBA66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				330999B51C4AD869005CBA66 /* appGestosFoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		330999B41C4AD869005CBA66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330999D01C4B43DD005CBA66 /* LaunchScreen.storyboard in Resources */,
+				330999C11C4AD869005CBA66 /* Assets.xcassets in Resources */,
+				330999BF1C4AD869005CBA66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		330999B21C4AD869005CBA66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330999BC1C4AD869005CBA66 /* ViewController.swift in Sources */,
+				330999D21C4B482C005CBA66 /* TimerCameraOverlayView.swift in Sources */,
+				330999BA1C4AD869005CBA66 /* AppDelegate.swift in Sources */,
+				331423FC1C5129D900DA13DB /* PatternViewController.swift in Sources */,
+				330999CE1C4AF3E3005CBA66 /* GlobalFunctions.swift in Sources */,
+				330999CC1C4ADEA9005CBA66 /* BoardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		330999BD1C4AD869005CBA66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330999BE1C4AD869005CBA66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		330999C61C4AD869005CBA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		330999C71C4AD869005CBA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		330999C91C4AD869005CBA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = appGestosFoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.appGestosFoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		330999CA1C4AD869005CBA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = appGestosFoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.appGestosFoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		330999B11C4AD869005CBA66 /* Build configuration list for PBXProject "appGestosFoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330999C61C4AD869005CBA66 /* Debug */,
+				330999C71C4AD869005CBA66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330999C81C4AD869005CBA66 /* Build configuration list for PBXNativeTarget "appGestosFoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330999C91C4AD869005CBA66 /* Debug */,
+				330999CA1C4AD869005CBA66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 330999AE1C4AD869005CBA66 /* Project object */;
+}
