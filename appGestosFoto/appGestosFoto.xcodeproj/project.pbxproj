@@ -16,6 +16,8 @@
 		330999D01C4B43DD005CBA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330999CF1C4B43DD005CBA66 /* LaunchScreen.storyboard */; };
 		330999D21C4B482C005CBA66 /* TimerCameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330999D11C4B482C005CBA66 /* TimerCameraOverlayView.swift */; };
 		331423FC1C5129D900DA13DB /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331423FB1C5129D900DA13DB /* PatternViewController.swift */; };
+		33CDCBDF1C6E7041007271FA /* UIImagePickerController+CameraTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDCBDE1C6E7041007271FA /* UIImagePickerController+CameraTimer.swift */; };
+		33CDCBE31C6E83F5007271FA /* UIImagePickerController+FullScreenCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDCBE21C6E83F5007271FA /* UIImagePickerController+FullScreenCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		330999CF1C4B43DD005CBA66 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		330999D11C4B482C005CBA66 /* TimerCameraOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCameraOverlayView.swift; sourceTree = "<group>"; };
 		331423FB1C5129D900DA13DB /* PatternViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
+		33CDCBDE1C6E7041007271FA /* UIImagePickerController+CameraTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+CameraTimer.swift"; sourceTree = "<group>"; };
+		33CDCBE21C6E83F5007271FA /* UIImagePickerController+FullScreenCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+FullScreenCamera.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,8 @@
 			children = (
 				330999B91C4AD869005CBA66 /* AppDelegate.swift */,
 				330999BB1C4AD869005CBA66 /* ViewController.swift */,
-				331423FB1C5129D900DA13DB /* PatternViewController.swift */,
-				330999CB1C4ADEA9005CBA66 /* BoardView.swift */,
-				330999D11C4B482C005CBA66 /* TimerCameraOverlayView.swift */,
+				33CDCBE01C6E7C85007271FA /* Camera */,
+				33CDCBE11C6E7C8C007271FA /* Gesture */,
 				330999CD1C4AF3E3005CBA66 /* GlobalFunctions.swift */,
 				330999BD1C4AD869005CBA66 /* Main.storyboard */,
 				330999C01C4AD869005CBA66 /* Assets.xcassets */,
@@ -74,6 +77,25 @@
 				330999C51C4AD869005CBA66 /* Info.plist */,
 			);
 			path = appGestosFoto;
+			sourceTree = "<group>";
+		};
+		33CDCBE01C6E7C85007271FA /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				33CDCBE21C6E83F5007271FA /* UIImagePickerController+FullScreenCamera.swift */,
+				33CDCBDE1C6E7041007271FA /* UIImagePickerController+CameraTimer.swift */,
+				330999D11C4B482C005CBA66 /* TimerCameraOverlayView.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		33CDCBE11C6E7C8C007271FA /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				331423FB1C5129D900DA13DB /* PatternViewController.swift */,
+				330999CB1C4ADEA9005CBA66 /* BoardView.swift */,
+			);
+			name = Gesture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CDCBDF1C6E7041007271FA /* UIImagePickerController+CameraTimer.swift in Sources */,
 				330999BC1C4AD869005CBA66 /* ViewController.swift in Sources */,
 				330999D21C4B482C005CBA66 /* TimerCameraOverlayView.swift in Sources */,
+				33CDCBE31C6E83F5007271FA /* UIImagePickerController+FullScreenCamera.swift in Sources */,
 				330999BA1C4AD869005CBA66 /* AppDelegate.swift in Sources */,
 				331423FC1C5129D900DA13DB /* PatternViewController.swift in Sources */,
 				330999CE1C4AF3E3005CBA66 /* GlobalFunctions.swift in Sources */,

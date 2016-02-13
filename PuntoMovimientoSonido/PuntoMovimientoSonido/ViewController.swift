@@ -3,7 +3,7 @@
 //  PuntoMovimientoSonido
 //
 //  Created by Daniel Barros López and Yoji Sargent Harada
-//  Last modification on Feb 10 2016
+//  Last modification on Feb 13 2016
 //
 //  Copyright (C) 2015  Yoji Sargent Harada, Daniel Barros López
 //
@@ -26,11 +26,17 @@ import CoreMotion
 import AVFoundation
 import WatchConnectivity
 
+// Handles a view containing a switch that turns on/off gesture recognition.
+// The gesture consists on turning over the device and moving it left/right
+// It communicates with Apple Watch for step by step guidance
+// When gesture is detected device will play a sound and vibrate
 class ViewController: UIViewController, WCSessionDelegate {
     
+    let manager = CMMotionManager()
     var timer: NSTimer?
     var player: AVAudioPlayer!
     let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
+    /// - returns: `session` property if watch is paired and reachable, and app is installed. `nil` otherwise
     var validSession: WCSession? {
         if let validSession = session where validSession.paired && validSession.watchAppInstalled && validSession.reachable {
             return validSession
@@ -47,19 +53,23 @@ class ViewController: UIViewController, WCSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Loads sound
         let url = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("buttonIn.mp3", ofType: nil)!)
         player = try! AVAudioPlayer(contentsOfURL: url)
         
+        // Set up Apple Watch connectivity session
         session?.delegate = self
         session?.activateSession()
     }
     
+    // State of gesture recognition. Notifies Apple Watch with each change
     var gesturePhase = ButterGesturePhase.Beginning {
         didSet {
             validSession?.sendMessage([WatchMessageKeys.phaseChange: gesturePhase.rawValue], replyHandler: nil, errorHandler: nil)
         }
     }
     
+    // Recognizes current gesture and moves to next step if proper
     func detectPattern() {
         guard let xAcc = manager.deviceMotion?.userAcceleration.x else {
             return
@@ -82,13 +92,12 @@ class ViewController: UIViewController, WCSessionDelegate {
         }
     }
     
+    /// Plays a sound and makes device vibrate
     func patternDetected() {
         player.prepareToPlay()
         player.play()
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))  // makes device vibrate
     }
-    
-    let manager = CMMotionManager()
     
     deinit {
         timer?.invalidate()
@@ -97,6 +106,7 @@ class ViewController: UIViewController, WCSessionDelegate {
 
     @IBAction func startPattern(sender: UISwitch) {
         if sender.on {
+            // Starts gesture recognition (a method called regularly using a repeating timer)
             if manager.deviceMotionAvailable {
                 manager.deviceMotionUpdateInterval = Constants.gestureRecognitionUpdateInterval
                 manager.startDeviceMotionUpdates()
@@ -105,9 +115,9 @@ class ViewController: UIViewController, WCSessionDelegate {
                 gesturePhase = .Beginning
             }
         } else {
+            // Stops gesture recognition
             timer?.invalidate()
             manager.stopDeviceMotionUpdates()
-            
             validSession?.sendMessage([WatchMessageKeys.switchOff: ""], replyHandler: nil, errorHandler: nil)
         }
     }

@@ -3,7 +3,7 @@
 //  appGestosFoto
 //
 //  Created by Daniel Barros López and Yoji Sargent Harada
-//  Last modification on Feb 6 2016
+//  Last modification on Feb 13 2016
 //
 //  Copyright (C) 2015  Yoji Sargent Harada, Daniel Barros López
 //
@@ -27,35 +27,71 @@ import UIKit
 // A custom view containing a label
 class TimerCameraOverlayView: UIView {
     
-    var label = UILabel()
+    var label: UILabel
+    var button: UIButton
+    weak var delegate: TimerCameraOverlayViewDelegate?
     
-    // Updates the label's text simulating a 3 second timer
-    func start3secTimer() {
-        label.text = "3"
+    private var started = false
+    
+    /// Starts a timer that will fire in the specified time (in seconds) notifying the delegate.
+    /// - warning: Use only for short timers. Not efficiently implemented for cases with long timers where user restarts timer after canceling several times
+    func startTimer(seconds: Int) {
+        started = true
+        label.text = String(seconds)
         label.sizeToFit()
-        delay(1) {
-            self.label.text = "2"
-        }
-        delay(2) {
-            self.label.text = "1"
-        }
-        delay(3) {
-            self.label.text = "0"
+        decreaseTime(seconds - 1)
+    }
+    
+    /// Recursively decrements timer
+    private func decreaseTime(remainingSecs: Int) {
+        delay(1) { [weak self] in
+            if let strongSelf = self where strongSelf.started {
+                strongSelf.label.text = String(remainingSecs)   // updates label
+                if remainingSecs == 0 {
+                    strongSelf.delegate?.timerCameraOverlayViewDidFire(strongSelf)  // fires
+                } else {
+                    strongSelf.decreaseTime(remainingSecs - 1)  // decreases by 1 sec
+                }
+            }
         }
     }
-
-    init() {
-        super.init(frame: CGRect(x: UIScreen.mainScreen().bounds.width/2 - 8,
-            y: UIScreen.mainScreen().bounds.height - 100,
-            width: 80, height: 80))
+    
+    override init(frame: CGRect) {
+        label = UILabel()
+        button = UIButton()
         
+        super.init(frame: frame)
+        
+        addSubview(label)
+        addSubview(button)
+        
+        // Time label
         label.textColor = UIColor.whiteColor()
         label.font = UIFont.systemFontOfSize(40, weight: UIFontWeightMedium)
         label.sizeToFit()
-        addSubview(label)
+        label.frame.origin = CGPoint(x: frame.width/2 - 8, y: frame.height - 80)
+        
+        // Cancel button
+        button.setTitle("Cancelar", forState: .Normal)
+        button.titleLabel?.textColor = UIColor.whiteColor()
+        button.titleLabel?.font = UIFont.systemFontOfSize(20, weight: UIFontWeightRegular)
+        button.addTarget(self, action: "cancel:", forControlEvents: .TouchUpInside)
+        button.sizeToFit()
+        button.frame.origin = CGPoint(x: 20, y: frame.height - 70)
+    }
+    
+    /// Stops the timer and notifies the delegate
+    func cancel(sender: AnyObject) {
+        started = false
+        delegate?.timerCameraOverlayViewDidCancel(self)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+protocol TimerCameraOverlayViewDelegate: class {
+    func timerCameraOverlayViewDidCancel(overlayView: UIView)
+    func timerCameraOverlayViewDidFire(overlayView: UIView)
 }

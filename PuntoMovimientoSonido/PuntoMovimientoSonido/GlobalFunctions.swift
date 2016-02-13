@@ -22,11 +22,13 @@
 
 import Foundation
 
+/// Executes the given closure on the main thread after the specified time (in seconds)
 func delay(delay: Double, block: dispatch_block_t) {
     let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC)));
     dispatch_after(popTime, dispatch_get_main_queue(), block)
 }
 
+/// Executes the given closure on the main queue
 func mainQueue(block: dispatch_block_t) {
     dispatch_async(dispatch_get_main_queue(), block)
 }
@@ -44,6 +46,7 @@ enum QueueQualityOfService {
     }
 }
 
+/// Executes the given closure concurrently on a queue of the specified QOS (Quality of Service)
 func concurrentQueue(qos: QueueQualityOfService, block: dispatch_block_t) {
     dispatch_async(dispatch_get_global_queue(qos.GCDValue, 0), block)
 }

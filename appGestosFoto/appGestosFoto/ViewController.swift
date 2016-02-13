@@ -23,13 +23,13 @@
 
 
 import UIKit
+import AVFoundation
 
 /// Handles a view containing a button for recording a pattern, a BoardView managed by its own view controller in charge of the pattern logic, and an image that will show the last picture taken by the camera when the correct pattern is introduced.
-class ViewController: UIViewController, PatternViewDelegate, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
+class ViewController: UIViewController, PatternViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!  // Shows last picture taken
-    weak var cameraOverlayView: TimerCameraOverlayView? // Overlay view for image picker that shows a timer
-    let picker = UIImagePickerController()
+    var picker = UIImagePickerController()
     @IBOutlet weak var newPatternButton: UIButton!
     
     var patternViewController: PatternViewController {
@@ -41,20 +41,17 @@ class ViewController: UIViewController, PatternViewDelegate, UIImagePickerContro
         
         patternViewController.delegate = self
         
-        // Set up image picker
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
-            picker.sourceType = .Camera
-            picker.showsCameraControls = false
-            let overlayView = TimerCameraOverlayView();
-            picker.cameraOverlayView = overlayView
-            self.cameraOverlayView = overlayView
             picker.delegate = self
+            // image picker controller setup is done as extensions to avoid subclassing and loosing UIImagePickerController's init()
+            picker.scaleCameraViewToFillScreen()
+            picker.setUpCameraTimer()
         }
         
-        // App starts saving new pattern
         startSavingPattern(self)
     }
     
+    /// Initiates process of setting new pattern
     @IBAction func startSavingPattern(sender: AnyObject) {
         newPatternButton.enabled = false
         patternViewController.startSavingNewPattern()
@@ -69,11 +66,7 @@ class ViewController: UIViewController, PatternViewDelegate, UIImagePickerContro
     func didMatchPattern() {
         // Show image picker
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
-            presentViewController(picker, animated: true, completion: {
-                delay(3) {
-                    self.picker.takePicture()
-                }
-            })
+            presentViewController(picker, animated: true, completion: nil)
         }
     }
     
@@ -89,10 +82,14 @@ class ViewController: UIViewController, PatternViewDelegate, UIImagePickerContro
         })
     }
     
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func navigationController(navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated: Bool) {
         // Start timer once picker is shown
         if navigationController == picker {
-            self.cameraOverlayView!.start3secTimer()
+            picker.startCameraTimer(3)
         }
     }
 }

@@ -22,6 +22,6 @@
 //
 
 struct WatchMessageKeys {
-    static let phaseChange = "WatchMessageKeyPhaseChange"
-    static let switchOff = "WatchMessageKeySwitchOff"
+    static let phaseChange = "WatchMessageKeyPhaseChange"   // Sent when gesture phase changes
+    static let switchOff = "WatchMessageKeySwitchOff"   // Sent when switch is turned off
 }

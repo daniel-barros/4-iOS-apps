@@ -3,7 +3,7 @@
 //  appMovimientoSonido Extension
 //
 //  Created by Daniel Barros López and Yoji Sargent Harada
-//  Last modification on Feb 10 2016
+//  Last modification on Feb 13 2016
 //
 //  Copyright (C) 2015  Yoji Sargent Harada, Daniel Barros López
 //
@@ -27,6 +27,7 @@ import Foundation
 import CoreMotion
 
 
+// Handles very simple UI consisting of a label used to show instructions corresponding to messages sent by the iOS app
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
     @IBOutlet var label: WKInterfaceLabel!
@@ -52,11 +53,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
 }
 
-
 // MARK: WCSessionDelegate
+
 extension InterfaceController {
+    
+    // Makes label show instructions according to received message
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
-        
         mainQueue {
             if message[WatchMessageKeys.switchOff] != nil {
                 self.label.setText("Acciona el interruptor en la aplicación de iPhone para empezar")
@@ -65,12 +67,14 @@ extension InterfaceController {
                 let phase = ButterGesturePhase(rawValue: message[WatchMessageKeys.phaseChange] as! Int)!
                 if phase == .Beginning {
                     if !self.firstTime {
+                        // Gesture completed (notify and show instructions for first step after brief delay
                         self.label.setText("Gesto detectado!")
                         delay(1) { [weak self] in
                             self?.label.setText(phase.helpMessage)
                         }
                         return
                     } else {
+                        // Gesture just started
                         self.firstTime = false
                     }
                 }
