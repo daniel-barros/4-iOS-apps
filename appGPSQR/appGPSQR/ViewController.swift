@@ -167,7 +167,8 @@ extension ViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        visitedLocations += locations
+        // Only saves locations with a minimum accuracy
+        visitedLocations += locations.filter { $0.horizontalAccuracy < 35 }
         finishButton.enabled = true
     }
 }
