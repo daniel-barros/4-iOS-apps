@@ -36,7 +36,7 @@ enum CardinalPoint: Int {
         case "Sur":
             self = .South
         case "Este", "Éste", "Esté":
-            self = . East
+            self = .East
         case "Oeste", "O Este":
             self = .West
         default:
